@@ -1,0 +1,130 @@
+/* Main container to center the form */
+.sr-main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh; 
+    background-color: transparent;
+    padding: 20px;
+  }
+  .row-ret{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Form title */
+  .sr-main-form h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form container */
+  .sr-form {
+    background-color: transparent;
+    /* padding: 30px; */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px; /* Max form width */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input fields */
+  .sr-input {
+    padding: 12px;
+    margin: 10px 0;
+    font-weight: 500;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fafafa;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color: black;
+  }
+  
+  /* Focus effect for inputs */
+  .sr-input:focus {
+    border-color:#f57c00;
+  }
+  
+  /* Button container to align buttons in a row */
+  .btn-container {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* width: 30%;  */
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+  }
+  
+  /* Add button style */
+  .sr-add,.sr-retrieve {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  .sr-add:hover,.sr-retrieve:hover {
+    background-color: #45a049;
+  }
+  
+  /* Update button style */
+  .sr-update {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  .sr-update:hover {
+    background-color: #f57c00;
+  }
+  
+  /* Delete button style */
+  .sr-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  .sr-delete:hover {
+    background-color: #e53935;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .sr-form {
+      width: 90%;
+    }
+  
+    .btn-container {
+      flex-direction: column;
+    }
+  
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

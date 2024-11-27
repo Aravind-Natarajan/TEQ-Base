@@ -1,0 +1,106 @@
+/* Main container for the Student Details page */
+.student-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* background-color: #f8f8f8; */
+    min-height: 100vh;
+  }
+  
+  /* Style for filter buttons */
+  .filter-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .table-container h2{
+    color: white;
+    text-align: center;
+  }
+  
+  .trainer-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px black;
+  }
+  
+  .trainer-button:hover {
+    background-color: #e74c3c;
+  }
+  
+  /* Style for filter message */
+  .filter-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Table container */
+  .table-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    overflow-x: auto;
+    backdrop-filter: blur(20px);
+  }
+  
+  /* Table styles */
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+   
+  }
+  
+  .student-table th,
+  .student-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .student-table th {
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+  }
+  
+  
+  .student-table tbody tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  /* Loading and error message */
+  .loading,
+  .error {
+    font-size: 18px;
+    color: #e74c3c;
+    text-align: center;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .trainer-button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    .student-table th,
+    .student-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
