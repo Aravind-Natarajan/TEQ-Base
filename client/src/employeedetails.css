@@ -1,0 +1,79 @@
+/* Main container for the Employee Details page */
+.employee-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f9f9f9; */
+  }
+  
+  /* Title of the page */
+  .page-title {
+    color:white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the loading state */
+  .loading {
+    font-size: 1.5rem;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  /* Style for the error state */
+  .error {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Table styles */
+  .employee-table {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color:transparent;
+    backdrop-filter: blur(10px);
+    color: #e0e0e0;
+    
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom:1px solid white ;
+  }
+  
+  .employee-table th {
+    background-color: #333;
+  color: white;
+  font-weight: bold;
+  }
+
+  .employee-table tbody tr:hover{
+    background-color: #f4f4f4;
+    color: black;/* Alternate row color */
+  }
+  
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .employee-table {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .employee-table th,
+    .employee-table td {
+      padding: 8px 10px;
+    }
+  }
+  

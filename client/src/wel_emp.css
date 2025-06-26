@@ -1,0 +1,157 @@
+/* wel_emp.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container styling */
+.welcome-container {
+  height: 100vh;
+  background: url('./assets/back1.avif') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Home button styling */
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Content section styling */
+.content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 800px;
+  color: white;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.report-btn {
+  display: flex;
+  align-items: center;
+  background-color: #ff6f61;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.report-btn:hover {
+  background-color: #d45543;
+  transform: translateY(-3px);
+}
+
+.report-btn svg {
+  margin-right: 10px;
+}
+
+/* Table styling */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+  background-color: #333;
+  color: white;
+  font-weight: 500;
+}
+
+.student-table tr {
+  transition: background-color 0.3s ease;
+}
+
+.student-table tr:hover {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+/* Loading and Error states */
+.loading {
+  font-size: 1.5rem;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.error {
+  font-size: 1.5rem;
+  color: red;
+  animation: fadeIn 1s ease-in-out;
+}
+/* Add the trainer image styling */
+.trainer-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.roww{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Animation for fade-in and sliding effects */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

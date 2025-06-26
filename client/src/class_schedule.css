@@ -1,0 +1,94 @@
+/* Main container for class schedule */
+.schedule-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color:transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedule-title {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styles */
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color: white;
+  }
+  
+  .schedule-table th,
+  .schedule-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    
+  }
+  
+  .schedule-table th {
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+  }
+  
+ 
+  
+  .schedule-table td div {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  /* .schedule-table tbody tr:hover {
+    background-color: #c0c0c0;
+    color: black;
+  } */
+
+  
+  
+  /* Style for loading and error messages */
+  .loading, .error {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c;
+    margin-top: 20px;
+  }
+  
+  /* Styling for each student entry in the slots */
+  .student-info {
+    background-color: #e74c3c;
+    margin: 5px 0;
+    padding: 3px 5px;
+    border-radius: 4px;
+  }
+  /* .student-info:hover{
+    background-color: #333;
+    margin: 5px 0;
+    padding: 3px 5px;
+    border-radius: 4px;
+  } */
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 768px) {
+    .schedule-table th,
+    .schedule-table td {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .schedule-title {
+      font-size: 20px;
+    }
+  
+    .student-info {
+      font-size: 12px;
+    }
+  }
+  

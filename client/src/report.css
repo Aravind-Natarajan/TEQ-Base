@@ -1,0 +1,205 @@
+/* report.css */
+
+/* Container with background image and fade-in animation */
+.report-container {
+    background: url('./assets/back1.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 8px;
+  }
+  
+  .back-btn {
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .back-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Inputs and Team Info */
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 45%;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f4f4f4;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #66ccff;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none; /* Disables the resizing of the textarea */
+  }
+  
+  /* Table Styling */
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-table th,
+  .report-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #444;
+  }
+  
+  .report-table th {
+    background-color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .report-table td {
+    background-color: #222;
+  }
+  
+  .report-table tr:nth-child(even) {
+    background-color: #2c2c2c;
+  }
+  
+  .report-table tr:hover {
+    background-color: #444;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .report-table td textarea {
+    width: 100%;
+    margin-top: 5px;
+    background-color: #333;
+    color: white;
+    border-color: #444;
+    resize: none;
+  }
+  
+  /* Student Item Styling */
+  .student-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #d45543;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Loading and Error Messages */
+  .loading,
+  .error {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+    .inputs {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .input-group {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .report-table th, .report-table td {
+      padding: 10px 15px;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  }
+  
